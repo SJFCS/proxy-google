@@ -1,0 +1,10 @@
+{
+   "version": 2,
+   "name": "proxy-google",
+   "builds": [
+      { "src": "proxy.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/proxy.js" }
+   ]
+}
